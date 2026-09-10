@@ -1,0 +1,121 @@
+student_id,skills,interests,target_role,year,cgpa
+S001,Cybersecurity|Networking|Python|SOC,DevOps|Cybersecurity,Cybersecurity Analyst,4,8.65
+S002,Git|JavaScript|Python|REST API,DevOps|Web,Full Stack Developer,4,7.08
+S003,Cloud Security|Cybersecurity|Incident Response|Networking|Python|SIEM,Cloud|DevOps,Cybersecurity Analyst,2,7.12
+S004,Docker|Linux|Networking|SQL,Backend|DevOps,Cloud Engineer,2,8.62
+S005,C++|Git|JavaScript|Node.js,Backend|Web,Full Stack Developer,4,6.7
+S006,Cloud Security|Git|Linux|Networking|SIEM,DevOps|Cloud,Cybersecurity Analyst,2,7.57
+S007,Docker|Git|Microservices|Python|Spring Boot,DevOps|Backend,Backend Developer,4,7.44
+S008,Data Warehousing|Hadoop|Python|Spark,Analytics|Cloud,Data Engineer,2,8.4
+S009,Machine Learning|NumPy|SQL|Scikit-learn|Statistics|Visualization,Analytics|Data,Data Scientist,3,7.14
+S010,Docker|Git|Java|Microservices|Python|SQL,Web|Backend,Backend Developer,3,7.61
+S011,NumPy|Python|Scikit-learn|Statistics|Visualization,Data|AI,Data Scientist,3,7.76
+S012,Pandas|SQL|Visualization,AI|Data,Data Scientist,4,7.97
+S013,Docker|Git|Python|Spring Boot,Web|Backend,Backend Developer,4,7.44
+S014,AWS|Data Warehousing|Python|Spark,Analytics|Data,Data Engineer,2,8.62
+S015,AWS|C++|ETL|Hadoop|Spark,Analytics|Cloud,Data Engineer,2,9.19
+S016,Cybersecurity|Python|SIEM|SOC,DevOps|Cloud,Cybersecurity Analyst,2,7.22
+S017,AWS|Data Warehousing|ETL|Java|Python|SQL,Data|Analytics,Data Engineer,2,8.99
+S018,AWS|ETL|Hadoop|SQL,Analytics|Cloud,Data Engineer,2,8.78
+S019,Git|Machine Learning|NumPy|Python|SQL,Data|AI,Data Scientist,4,8.4
+S020,Java|Networking|Python|SOC,Cybersecurity|DevOps,Cybersecurity Analyst,2,8.06
+S021,Java|Microservices|Python|REST API|SQL|Spring Boot,Web|Backend,Backend Developer,2,8.39
+S022,Git|HTML|REST API,Backend|Web,Full Stack Developer,3,9.12
+S023,Docker|Git|Java|Python|REST API|SQL,Web|DevOps,Backend Developer,2,7.05
+S024,C++|Git|Java|SQL,DevOps|Backend,Backend Developer,2,9.29
+S025,Airflow|ETL|Python|SQL,Analytics|Data,Data Engineer,4,8.22
+S026,Git|Node.js|SQL,Backend|DevOps,Full Stack Developer,2,8.44
+S027,AWS|Docker|Kubernetes|Networking,Cloud|Backend,Cloud Engineer,3,8.3
+S028,HTML|Node.js|REST API,Web|Backend,Full Stack Developer,2,9.05
+S029,AWS|Docker|Kubernetes|Linux|Python,Backend|DevOps,Cloud Engineer,4,6.8
+S030,C++|Git|Java|Microservices|Python|Spring Boot,Backend|DevOps,Backend Developer,2,8.49
+S031,Docker|Git|Kubernetes|Linux|Networking|SQL|Terraform,Cloud|DevOps,Cloud Engineer,2,8.65
+S032,Git|HTML|JavaScript|Node.js|REST API|SQL,Web|Backend,Full Stack Developer,2,6.62
+S033,Java|Networking|Python|Terraform,DevOps|Backend,Cloud Engineer,4,8.67
+S034,Java|Python|REST API|SQL,DevOps|Web,Backend Developer,4,9.01
+S035,Docker|Git|Java|REST API|SQL,DevOps|Backend,Backend Developer,2,8.87
+S036,NumPy|Pandas|Python|SQL|Scikit-learn,Data|Analytics,Data Scientist,3,9.01
+S037,AWS|Git|Kubernetes|Linux|SQL|Terraform,Cloud|DevOps,Cloud Engineer,2,6.81
+S038,C++|Machine Learning|NumPy|Pandas|Python|Visualization,AI|Data,Data Scientist,2,8.56
+S039,AWS|Hadoop|Python|Spark,Analytics|Data,Data Engineer,4,9.11
+S040,CSS|Git|HTML|REST API|React,DevOps|Web,Full Stack Developer,4,8.15
+S041,Pandas|SQL|Statistics,Analytics|Data,Data Scientist,3,7.78
+S042,Cloud Security|Incident Response|Linux|SOC,Cloud|DevOps,Cybersecurity Analyst,2,8.87
+S043,Docker|Git|Java|Python|REST API,Web|Backend,Backend Developer,3,7.7
+S044,Cloud Security|Incident Response|Java|Linux|Python,Cybersecurity|Cloud,Cybersecurity Analyst,2,7.01
+S045,Cloud Security|Incident Response|Linux|Networking|Python|SIEM,DevOps|Cloud,Cybersecurity Analyst,3,8.28
+S046,Cloud Security|Incident Response|Linux|Python|SIEM|SOC,DevOps|Cloud,Cybersecurity Analyst,4,7.91
+S047,Git|Java|Microservices|Python|SQL,Web|Backend,Backend Developer,2,6.94
+S048,Git|Machine Learning|NumPy|Python|Visualization,Data|AI,Data Scientist,2,8.92
+S049,Machine Learning|Python|Scikit-learn,Data|Analytics,Data Scientist,3,8.06
+S050,Cybersecurity|Incident Response|Linux|Python,Cloud|DevOps,Cybersecurity Analyst,4,8.47
+S051,Git|NumPy|Pandas|SQL|Visualization,Analytics|AI,Data Scientist,2,8.36
+S052,Docker|Git|Java|Microservices|REST API|SQL,DevOps|Web,Backend Developer,3,8.68
+S053,Machine Learning|NumPy|Pandas|Python|SQL,Data|AI,Data Scientist,4,6.7
+S054,Cloud Security|Linux|Networking,DevOps|Cybersecurity,Cybersecurity Analyst,2,6.87
+S055,Incident Response|Python|SOC|SQL,Cybersecurity|DevOps,Cybersecurity Analyst,2,9.3
+S056,AWS|Airflow|ETL,Cloud|Analytics,Data Engineer,4,7.08
+S057,CSS|HTML|Node.js|SQL,DevOps|Web,Full Stack Developer,3,8.04
+S058,Cybersecurity|Linux|Networking|SIEM|SOC,Cloud|Cybersecurity,Cybersecurity Analyst,3,9.29
+S059,Cloud Security|Cybersecurity|Incident Response|Linux|Python|SIEM,DevOps|Cloud,Cybersecurity Analyst,3,7.76
+S060,Cloud Security|Cybersecurity|Linux|Networking|SOC,Cybersecurity|Cloud,Cybersecurity Analyst,4,8.27
+S061,Machine Learning|Python|SQL|Scikit-learn|Statistics,Data|Analytics,Data Scientist,4,8.53
+S062,Docker|Linux|Networking,DevOps|Cloud,Cloud Engineer,4,7.88
+S063,Cloud Security|Cybersecurity|Incident Response|Networking|SIEM|SOC,Cybersecurity|Cloud,Cybersecurity Analyst,4,8.19
+S064,NumPy|Pandas|Scikit-learn|Statistics|Visualization,Data|Analytics,Data Scientist,3,7.17
+S065,Incident Response|Networking|SIEM|SOC,DevOps|Cybersecurity,Cybersecurity Analyst,2,7.13
+S066,NumPy|Pandas|Python|SQL|Statistics,AI|Analytics,Data Scientist,3,6.63
+S067,AWS|ETL|Hadoop|Python|Spark,Cloud|Analytics,Data Engineer,3,7.49
+S068,Airflow|Data Warehousing|ETL|Hadoop|Java|Python,Data|Analytics,Data Engineer,4,9.25
+S069,Data Warehousing|ETL|Hadoop|SQL,Analytics|Data,Data Engineer,4,7.6
+S070,NumPy|Pandas|Python|Scikit-learn|Statistics,Analytics|AI,Data Scientist,2,8.31
+S071,AWS|Git|Networking,Cloud|Backend,Cloud Engineer,3,7.81
+S072,CSS|HTML|JavaScript|Node.js|REST API|React,Web|DevOps,Full Stack Developer,3,8.78
+S073,Cloud Security|Linux|Networking|SIEM,Cloud|Cybersecurity,Cybersecurity Analyst,2,6.67
+S074,AWS|Docker|Linux|Python|Terraform,Backend|DevOps,Cloud Engineer,3,6.73
+S075,AWS|Data Warehousing|ETL|Hadoop|Python|Spark,Analytics|Data,Data Engineer,4,8.88
+S076,CSS|Node.js|React,Backend|Web,Full Stack Developer,4,7.76
+S077,Java|Machine Learning|Statistics|Visualization,AI|Data,Data Scientist,3,8.51
+S078,AWS|Docker|Git|Kubernetes|Linux|Networking|Python,Backend|Cloud,Cloud Engineer,4,9.02
+S079,Machine Learning|NumPy|Pandas|Python|SQL|Statistics,AI|Analytics,Data Scientist,3,8.09
+S080,AWS|C++|Git|Kubernetes|Linux|Networking|Python,Cloud|DevOps,Cloud Engineer,2,7.15
+S081,AWS|Airflow|ETL|Hadoop|SQL|Spark,Cloud|Analytics,Data Engineer,3,7.21
+S082,Git|HTML|Node.js|SQL,Web|DevOps,Full Stack Developer,3,8.74
+S083,Pandas|Python|Scikit-learn|Statistics|Visualization,Analytics|Data,Data Scientist,2,7.79
+S084,Machine Learning|NumPy|Pandas|Scikit-learn|Visualization,AI|Analytics,Data Scientist,4,7.61
+S085,Machine Learning|NumPy|Visualization,Data|Analytics,Data Scientist,4,8.8
+S086,Incident Response|Linux|Networking|SIEM,Cloud|Cybersecurity,Cybersecurity Analyst,3,6.79
+S087,Machine Learning|NumPy|Statistics,AI|Data,Data Scientist,3,7.48
+S088,Cloud Security|Cybersecurity|Incident Response|Linux|Python|SIEM,Cloud|Cybersecurity,Cybersecurity Analyst,4,6.7
+S089,Cloud Security|Incident Response|Networking|Python|SOC,DevOps|Cybersecurity,Cybersecurity Analyst,3,6.98
+S090,AWS|Linux|Python|SQL,DevOps|Cloud,Cloud Engineer,2,8.04
+S091,CSS|HTML|JavaScript|Node.js,DevOps|Web,Full Stack Developer,3,9.15
+S092,Git|Java|Microservices|REST API|SQL,DevOps|Web,Backend Developer,4,8.09
+S093,AWS|Airflow|ETL|Hadoop|SQL|Spark,Data|Cloud,Data Engineer,3,6.81
+S094,C++|Machine Learning|NumPy|Pandas|Python|Statistics,Analytics|AI,Data Scientist,4,8.66
+S095,Git|Networking|Python|Terraform,Backend|Cloud,Cloud Engineer,4,6.78
+S096,Cloud Security|Python|SIEM|SQL,DevOps|Cybersecurity,Cybersecurity Analyst,2,9.14
+S097,AWS|Docker|Git|Kubernetes|Networking|Python,DevOps|Cloud,Cloud Engineer,3,9.15
+S098,Machine Learning|NumPy|Python|Scikit-learn|Visualization,Analytics|Data,Data Scientist,4,7.56
+S099,Pandas|Python|Visualization,Analytics|Data,Data Scientist,4,7.6
+S100,Incident Response|Linux|Networking|Python|SOC,DevOps|Cloud,Cybersecurity Analyst,4,7.14
+S101,AWS|Airflow|ETL|Hadoop|Python|SQL,Cloud|Analytics,Data Engineer,2,6.78
+S102,CSS|Git|Node.js|React,DevOps|Web,Full Stack Developer,3,8.4
+S103,Machine Learning|NumPy|Pandas|Python|SQL|Statistics,AI|Data,Data Scientist,2,9.34
+S104,AWS|Docker|Linux|Networking|Python,DevOps|Cloud,Cloud Engineer,4,7.12
+S105,Cloud Security|Cybersecurity|Networking|Python,DevOps|Cybersecurity,Cybersecurity Analyst,2,8.91
+S106,CSS|Git|HTML|React,DevOps|Web,Full Stack Developer,3,8.99
+S107,Docker|Java|Python|Spring Boot,Backend|Web,Backend Developer,2,7.54
+S108,Docker|Java|Microservices|Python|SQL,Web|Backend,Backend Developer,4,6.68
+S109,Machine Learning|Pandas|Python|SQL|Visualization,Analytics|Data,Data Scientist,3,8.37
+S110,Airflow|Data Warehousing|Hadoop,Data|Cloud,Data Engineer,4,9.14
+S111,AWS|ETL|SQL,Analytics|Cloud,Data Engineer,3,9.38
+S112,Git|JavaScript|Node.js|REST API|React,Web|DevOps,Full Stack Developer,3,7.81
+S113,Docker|Git|Microservices|REST API|SQL|Spring Boot,DevOps|Web,Backend Developer,3,9.27
+S114,Cloud Security|Linux|Networking|Python|SIEM|SOC,Cloud|Cybersecurity,Cybersecurity Analyst,4,6.67
+S115,CSS|Git|HTML|JavaScript|React,DevOps|Backend,Full Stack Developer,3,6.8
+S116,CSS|HTML|React|SQL,Backend|DevOps,Full Stack Developer,2,8.71
+S117,Git|Node.js|REST API|SQL,DevOps|Web,Full Stack Developer,4,9.19
+S118,Cybersecurity|Linux|Networking|Python|SIEM|SOC,Cybersecurity|Cloud,Cybersecurity Analyst,2,6.91
+S119,Git|Linux|SIEM|SOC,Cloud|DevOps,Cybersecurity Analyst,2,7.57
+S120,Cloud Security|Incident Response|Linux|Networking|SOC,Cloud|DevOps,Cybersecurity Analyst,4,7.73
