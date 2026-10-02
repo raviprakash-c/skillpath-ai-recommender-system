@@ -1,0 +1,106 @@
+from pathlib import Path
+import random
+import pandas as pd
+from src.config import ROLE_SKILLS
+
+random.seed(42)
+ROOT = Path(__file__).resolve().parent
+DATA = ROOT / "data"
+DATA.mkdir(exist_ok=True)
+
+resource_rows = [
+("R01","Python for Data Engineering","Course","Data","Python|ETL|SQL","Beginner","Build ETL pipelines with Python and SQL.",4.8),
+("R02","Apache Spark Fundamentals","Course","Data","Spark|Python|Data Warehousing","Intermediate","Distributed data processing with Spark.",4.7),
+("R03","Hadoop Ecosystem Lab","Lab","Data","Hadoop|Linux|ETL","Intermediate","Hands-on HDFS and Hadoop ecosystem practice.",4.2),
+("R04","Airflow Pipeline Project","Project","Data","Airflow|Python|ETL","Intermediate","Build scheduled production-style data workflows.",4.5),
+("R05","Data Warehouse Design","Course","Data","SQL|Data Warehousing|ETL","Intermediate","Dimensional modelling and warehouse concepts.",4.6),
+("R06","AWS Data Foundations","Certification","Cloud","AWS|Data Warehousing|ETL","Beginner","Cloud data services and architecture foundations.",4.7),
+("R07","Java Spring Boot REST APIs","Course","Backend","Java|Spring Boot|REST API","Intermediate","Create secure REST services with Spring Boot.",4.9),
+("R08","Microservices with Java","Course","Backend","Java|Microservices|Docker","Advanced","Design and containerize Java microservices.",4.5),
+("R09","Backend API Portfolio Project","Project","Backend","REST API|SQL|Git","Intermediate","Portfolio-ready backend API with database.",4.6),
+("R10","Docker for Developers","Course","DevOps","Docker|Linux|Git","Beginner","Containerize applications and manage images.",4.8),
+("R11","SQL Query Mastery","Practice","Data","SQL|PostgreSQL","Intermediate","Practice joins, windows, subqueries and optimization.",4.9),
+("R12","FastAPI Production API","Project","Backend","Python|FastAPI|REST API","Intermediate","Build a production-style Python API.",4.5),
+("R13","Linux for Cloud Engineers","Course","Cloud","Linux|Networking|Git","Beginner","Linux administration for cloud workflows.",4.7),
+("R14","AWS Cloud Practitioner Path","Certification","Cloud","AWS|Cloud Security|Networking","Beginner","Cloud concepts, security and AWS services.",4.9),
+("R15","Kubernetes Essentials","Course","Cloud","Kubernetes|Docker|Linux","Intermediate","Deploy and manage container workloads.",4.6),
+("R16","Terraform Infrastructure Lab","Lab","Cloud","Terraform|AWS|Git","Intermediate","Infrastructure as code on AWS.",4.4),
+("R17","Cloud DevOps Capstone","Project","Cloud","AWS|Docker|Kubernetes|Terraform","Advanced","Deploy a complete cloud-native application.",4.8),
+("R18","Networking Fundamentals","Course","Cloud","Networking|Linux","Beginner","Core TCP/IP, DNS, routing and network concepts.",4.5),
+("R19","Machine Learning Foundations","Course","AI","Python|Machine Learning|Scikit-learn","Intermediate","Supervised and unsupervised ML foundations.",4.9),
+("R20","Statistics for Data Science","Course","AI","Statistics|Python","Intermediate","Probability, hypothesis testing and inference.",4.6),
+("R21","Pandas and NumPy Practice","Practice","AI","Pandas|NumPy|Python","Beginner","Data manipulation and numerical computing.",4.8),
+("R22","ML Portfolio Project","Project","AI","Machine Learning|Python|Scikit-learn","Intermediate","End-to-end machine learning project.",4.7),
+("R23","Data Visualization Lab","Lab","Analytics","Visualization|Python|Pandas","Beginner","Exploratory visualization and storytelling.",4.4),
+("R24","React Frontend Foundations","Course","Web","React|JavaScript|HTML|CSS","Intermediate","Build modern interactive frontends.",4.8),
+("R25","Node.js REST Backend","Course","Web","Node.js|JavaScript|REST API","Intermediate","Backend development using Node.js.",4.5),
+("R26","Full Stack Portfolio App","Project","Web","React|Node.js|SQL|REST API","Advanced","Build and deploy a complete full-stack app.",4.7),
+("R27","Git and GitHub Workflow","Practice","DevOps","Git","Beginner","Branches, pull requests and team workflows.",4.9),
+("R28","SOC Analyst Foundations","Course","Cybersecurity","SOC|SIEM|Incident Response","Beginner","Security operations and incident triage.",4.6),
+("R29","Python for Cybersecurity","Lab","Cybersecurity","Python|Cybersecurity|Linux","Intermediate","Automation scripts for security analysis.",4.4),
+("R30","Cloud Security Basics","Course","Cybersecurity","Cloud Security|AWS|Cybersecurity","Intermediate","Identity, cloud risks and security controls.",4.5),
+("R31","Incident Response Simulation","Project","Cybersecurity","Incident Response|SIEM|SOC","Advanced","Investigate and document a simulated incident.",4.7),
+("R32","MongoDB Backend Lab","Lab","Backend","MongoDB|REST API|Python","Intermediate","Document database integration for APIs.",4.2),
+("R33","Django Web Application","Project","Backend","Django|Python|SQL","Intermediate","Build a database-backed Django application.",4.3),
+("R34","Power BI Analytics","Course","Analytics","Power BI|SQL|Visualization","Beginner","Dashboards and business analytics.",4.6),
+("R35","Tableau Storytelling","Course","Analytics","Tableau|Visualization","Beginner","Interactive analytics dashboards.",4.2),
+("R36","C++ Problem Solving","Practice","Programming","C++|Git","Intermediate","Programming and algorithmic problem solving.",4.5),
+]
+
+resources = pd.DataFrame(resource_rows, columns=[
+    "resource_id","title","type","domain","skills","difficulty","description","popularity"
+])
+resources.to_csv(DATA/"resources.csv", index=False)
+
+interest_by_role = {
+    "Data Engineer": ["Data","Cloud","Analytics"],
+    "Backend Developer": ["Backend","DevOps","Web"],
+    "Cloud Engineer": ["Cloud","DevOps","Backend"],
+    "Data Scientist": ["AI","Data","Analytics"],
+    "Full Stack Developer": ["Web","Backend","DevOps"],
+    "Cybersecurity Analyst": ["Cybersecurity","Cloud","DevOps"],
+}
+
+students = []
+for n in range(1, 121):
+    role = random.choice(list(ROLE_SKILLS))
+    required = ROLE_SKILLS[role]
+    known_count = random.randint(3, min(6, len(required)))
+    skills = set(random.sample(required, known_count))
+    if random.random() < 0.4:
+        skills.add(random.choice(["Java","Python","SQL","Git","C++"]))
+    interests = random.sample(interest_by_role[role], k=2)
+    students.append({
+        "student_id": f"S{n:03d}",
+        "skills": "|".join(sorted(skills)),
+        "interests": "|".join(interests),
+        "target_role": role,
+        "year": random.choice([2,3,4]),
+        "cgpa": round(random.uniform(6.5, 9.4), 2),
+    })
+
+students = pd.DataFrame(students)
+students.to_csv(DATA/"students.csv", index=False)
+
+ratings = []
+for _, stu in students.iterrows():
+    sskills = set(stu["skills"].split("|"))
+    sinterests = set(stu["interests"].split("|"))
+    target = stu["target_role"]
+    candidate_ids = resources["resource_id"].tolist()
+    random.shuffle(candidate_ids)
+    number = random.randint(9, 16)
+
+    for rid in candidate_ids[:number]:
+        res = resources.loc[resources["resource_id"] == rid].iloc[0]
+        rskills = set(res["skills"].split("|"))
+        overlap = len(sskills & rskills)
+        role_overlap = len(set(ROLE_SKILLS[target]) & rskills)
+        domain_bonus = 1 if res["domain"] in sinterests else 0
+
+        raw = 2.0 + 0.55*overlap + 0.35*role_overlap + 0.35*domain_bonus + random.uniform(-0.9, 0.9)
+        rating = min(5.0, max(1.0, round(raw)))
+        ratings.append({"student_id": stu["student_id"], "resource_id": rid, "rating": rating})
+
+pd.DataFrame(ratings).to_csv(DATA/"ratings.csv", index=False)
+print("Generated:", len(students), "students,", len(resources), "resources,", len(ratings), "ratings")
